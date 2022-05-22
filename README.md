@@ -21,12 +21,12 @@ SO THAT I can manage my time effectively
     THEN the saved events persist
 # Live URL
 
-(https://israel386.github.io/friendly-parakeet/)
+(https://israel386.github.io/super-dico/)
 
 # ScreenShots
 
-![screenshots](Develop/images/Screenshot%202022-05-22%20123035.png)
-![screenshots](Develop/images/Screenshot%202022-05-22%20123117.png)
+![screenshots](images/Screenshot%202022-05-22%20123035.png)
+![screenshots](images/Screenshot%202022-05-22%20123117.png)
 
 ## Note
 All acceptance criteria have been met, code follows a logical structure and has been updated to generate schedule and svae input data to lacal storage. 
