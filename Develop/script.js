@@ -15,9 +15,10 @@ function setCurrentDay() {
 };
 
 
-// Call setCurrentDAy unction
+// Call setCurrentDAy function
 setCurrentDay();
 
+// Set up classes for each time and styled with bootstrap
 function setTimeBlocks() {
     for (var i = 0; i < 9; i++) {
         var setTime = moment(startTime, "h A").add(i, "h").format("h A");
@@ -32,6 +33,8 @@ function setTimeBlocks() {
     };
 };
 
+
+// Styled row based on time of day
 function timePriority() {
     for (var i = 0; i < 9; i++) {
         var textArea = document.getElementById("hours" + i);
@@ -48,6 +51,8 @@ function timePriority() {
     };
 };
 
+
+// intial save to local storage
 timeBlocks.on("click", "button", function () {
     var inputVal = [
         { id: 0, task: document.getElementById("hours0").value },
@@ -64,6 +69,7 @@ timeBlocks.on("click", "button", function () {
     console.log(inputVal);
 });
 
+// render information from local storage 
 function renderTasks() {
     var tasks = JSON.parse(localStorage.getItem("tasks"));
     if (tasks) {
@@ -74,7 +80,9 @@ function renderTasks() {
     };
 };
 
-
+// Call setTimeBlocks function
 setTimeBlocks();
+// Call timePriorities function
 timePriority();
+// Call renderTasks function
 renderTasks();
